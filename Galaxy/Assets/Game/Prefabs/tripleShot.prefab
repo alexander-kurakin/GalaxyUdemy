@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212701205023375044}
   - component: {fileID: 114079815230327138}
   - component: {fileID: 82795780493004480}
+  - component: {fileID: 114133074945044862}
   m_Layer: 0
   m_Name: right_laser
   m_TagString: Untagged
@@ -37,7 +38,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4438598677204042}
-  - component: {fileID: 114744555277384032}
   m_Layer: 0
   m_Name: tripleShot
   m_TagString: Untagged
@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 212381366584475050}
   - component: {fileID: 114374391493870470}
   - component: {fileID: 82376466624562426}
+  - component: {fileID: 114148783382433956}
   m_Layer: 0
   m_Name: left_laser
   m_TagString: Untagged
@@ -74,6 +75,7 @@ GameObject:
   - component: {fileID: 212289853327741798}
   - component: {fileID: 114192890007189950}
   - component: {fileID: 82258291862552918}
+  - component: {fileID: 114530116770954754}
   m_Layer: 0
   m_Name: central_laser
   m_TagString: Untagged
@@ -388,6 +390,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 10
+--- !u!114 &114133074945044862
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1044931682481158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c4374cf330bd5f438ccb4af5e8d03bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 8
+--- !u!114 &114148783382433956
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1464369260377808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c4374cf330bd5f438ccb4af5e8d03bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 8
 --- !u!114 &114192890007189950
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -412,18 +438,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 10
---- !u!114 &114744555277384032
+--- !u!114 &114530116770954754
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1073945939735116}
+  m_GameObject: {fileID: 1717766159763774}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9c4374cf330bd5f438ccb4af5e8d03bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 8
 --- !u!212 &212289853327741798
 SpriteRenderer:
   m_ObjectHideFlags: 1
