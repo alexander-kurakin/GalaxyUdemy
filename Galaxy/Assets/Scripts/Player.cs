@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float speed = 5.0f;
 
+    public GameObject laserPrefab;
+
     void Start()
     {
 
@@ -15,15 +17,20 @@ public class Player : MonoBehaviour
     void Update()
     {
         Movement();
+
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+        {
+            Instantiate(laserPrefab, transform.position + new Vector3 (0f,1.4f,0f), Quaternion.identity);
+        }
     }
 
     private void Movement()
     {
         float horizontalInput = Input.GetAxis("horizontal");
-        float verticalInput = Input.GetAxis("vertical");
+        float verticalInput   = Input.GetAxis("vertical");
 
         transform.Translate(Vector3.right * Time.deltaTime * speed * horizontalInput);
-        transform.Translate(Vector3.up * Time.deltaTime * speed * verticalInput);
+        transform.Translate(Vector3.up    * Time.deltaTime * speed * verticalInput);
 
         if (transform.position.y > 0f)
         {
